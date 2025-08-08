@@ -19,11 +19,20 @@ function applyVisualEffects() {
     // Obter todos os post-its
     const tipCards = document.querySelectorAll('.tip-card');
     
-    // Cores de post-its ajustadas à nova paleta (branco predominante)
+    // Cores claras e clássicas restritas a: amarelo, azul, verde e rosa
     const colors = [
-        '#FFFFFF',
-        '#FFFFFF',
-        '#FFFFFF'
+        // Amarelos
+        '#FFF8A6',
+        '#FFF2B2',
+        // Azuis
+        '#E7F7FF',
+        '#E0F2FF',
+        // Verdes
+        '#E9FFE3',
+        '#E6F7E6',
+        // Rosas
+        '#FDE2E4',
+        '#FFE6F1',
     ];
     
     // Aplicar estilos aleatórios a cada post-it
