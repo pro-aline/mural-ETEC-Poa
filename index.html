@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de Dicas MFP - Maratona Feminina de Programação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <img src="logo.png" alt="Logo MFP" class="logo-image">
+                <div class="logo-text-container">
+                    <span class="logo-text">Mural MFP</span>
+                    <span class="logo-subtitle">Dicas e Aprendizados</span>
+                </div>
+            </h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Feed de dicas -->
+            <section class="tips-feed" id="tipsFeed">
+                <div class="tips-grid">
+                    <!-- 
+                    ==============================================
+                    INSTRUÇÕES PARA ADICIONAR SUA DICA:
+                    ==============================================
+                    1. COPIE ESTE TEMPLATE:
+                   
+                    <article class="tip-card">
+                        <div class="tip-content">Escreva sua dica aqui...</div>
+                        <div class="tip-author">Por: Seu Nome</div>
+                    </article>
+                    2. Cole após este comentário
+                    3. Substitua "Escreva sua dica aqui..." pela sua dica
+                    4. Substitua "Seu Nome" pelo seu nome
+                    5. Salve o arquivo -->
+                
+
+                    <article class="tip-card">
+                        <div class="tip-content">Use console.log() para inspecionar valores em tempo de execução e entender o comportamento do código.</div>
+                        <div class="tip-author">Por: Ana Paula</div>
+                    </article>
+                    <article class="tip-card">
+                        <div class="tip-content">Intervalos curtos a cada 25 minutos ajudam a manter a concentração e a produtividade.</div>
+                        <div class="tip-author">Por: Beatriz Santos</div>
+                    </article>
+                    <article class="tip-card">
+                        <div class="tip-content">Defina claramente estados e transições em problemas de programação dinâmica antes de implementar.</div>
+                        <div class="tip-author">Por: Carla Ferreira</div>
+                    </article>
+                    
+                </div>
+                <div class="empty-state" id="emptyState" style="display: none;">
+                    <div class="empty-icon">💡</div>
+                    <h3>Nenhuma dica encontrada</h3>
+                    <p>Contribua com uma dica editando o código JavaScript!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mural MFP - Feito com 💚 para a Maratona Feminina de Programação</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
