@@ -19,16 +19,11 @@ function applyVisualEffects() {
     // Obter todos os post-its
     const tipCards = document.querySelectorAll('.tip-card');
     
-    // Cores de post-its para variação
+    // Cores de post-its ajustadas à nova paleta (branco predominante)
     const colors = [
-        '#ffff88', // amarelo
-        '#ff7eb9', // rosa
-        '#7afcff', // azul claro
-        '#feff9c', // amarelo claro
-        '#fff740', // amarelo forte
-        '#ff65a3', // rosa médio
-        '#ff7eb9', // rosa claro
-        '#daff8b', // verde claro
+        '#FFFFFF',
+        '#FFFFFF',
+        '#FFFFFF'
     ];
     
     // Aplicar estilos aleatórios a cada post-it
@@ -43,7 +38,7 @@ function applyVisualEffects() {
         card.style.transform = `rotate(${rotation}deg)`;
         card.style.backgroundColor = colors[colorIndex];
         
-        // Adicionar sombra para dar efeito de profundidade
-        card.style.boxShadow = '2px 2px 5px rgba(0,0,0,0.2)';
+    // Adicionar sombra para dar efeito de profundidade (compatível com #333)
+    card.style.boxShadow = '2px 2px 5px rgba(51,51,51,0.2)';
     });
 }

@@ -8,16 +8,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Indie+Flower&display=swap');
 
 :root {
-    /* Paleta de cores ETEC Poá */
-    --roxo-primario: #8B2CAB;
-    --roxo-secundario: #B967DB;
-    --rosa-accent: #E91E63;
-    --lilas-claro: #E1BEE7;
+    /* Paleta de cores ETEC Poá (apenas branco, #333 e #B20000) */
+    --roxo-primario: #B20000;      /* usado como cor primária (vermelho) */
+    --roxo-secundario: #333333;    /* usado como cor secundária (cinza escuro) */
+    --rosa-accent: #B20000;        /* accent também em vermelho */
+    --lilas-claro: #FFFFFF;        /* tons claros mapeados para branco */
     --branco: #FFFFFF;
-    --cinza-claro: #F8F9FA;
-    --cinza-medio: #E9ECEF;
-    --cinza-escuro: #495057;
-    --preto: #212529;
+    --cinza-claro: #FFFFFF;        /* claro = branco para manter paleta restrita */
+    --cinza-medio: #333333;        /* médio = cinza escuro para contraste em bordas */
+    --cinza-escuro: #333333;
+    --preto: #333333;
     
     /* Tipografia */
     --fonte-principal: 'Comfortaa', sans-serif;
@@ -37,18 +37,16 @@
     --border-radius-lg: 12px;
     
     /* Sombras */
-    --sombra-leve: 0 2px 4px rgba(139, 44, 171, 0.1);
-    --sombra-media: 0 4px 12px rgba(139, 44, 171, 0.15);
-    --sombra-forte: 0 8px 24px rgba(139, 44, 171, 0.2);
+    --sombra-leve: 0 2px 4px rgba(51, 51, 51, 0.1);
+    --sombra-media: 0 4px 12px rgba(51, 51, 51, 0.15);
+    --sombra-forte: 0 8px 24px rgba(51, 51, 51, 0.2);
 }
 
 body {
     font-family: var(--fonte-principal);
     line-height: 1.6;
     color: var(--cinza-escuro);
-    background: #D8C7E3; /* fundo lilás um pouco mais escuro */
-    background-image: linear-gradient(rgba(185, 103, 219, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(185, 103, 219, 0.08) 1px, transparent 1px);
-    background-size: 20px 20px; /* tamanho da grade */
+    background: var(--branco);
     min-height: 100vh;
 }
 
@@ -63,7 +61,7 @@ body {
     background:  var(--branco);
     color: var(--roxo-primario);
     padding: var(--espacamento-lg) 0;
-    box-shadow: 0 3px 10px rgba(139, 44, 171, 0.15);
+    box-shadow: 0 3px 10px rgba(51, 51, 51, 0.15);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -122,10 +120,11 @@ body {
     gap: var(--espacamento-xs);
     transition: all 0.3s ease;
     box-shadow: var(--sombra-leve);
+
 }
 
 .btn-add-tip:hover {
-    background: #c2185b;
+    background: var(--roxo-secundario);
     transform: translateY(-2px);
     box-shadow: var(--sombra-media);
 }
@@ -223,10 +222,10 @@ body {
 }
 
 .tip-card {
-    background: #f5eaf8; /* cor clarinha baseada no logo */
+    background: var(--branco);
     border-radius: var(--border-radius-lg);
     padding: var(--espacamento-xl);
-    box-shadow: 3px 3px 10px rgba(139, 44, 171, 0.2);
+    box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.2);
     transition: all 0.3s ease;
     border-left: 4px solid var(--roxo-secundario);
     letter-spacing: 0.02em;
@@ -278,6 +277,7 @@ body {
 .tip-category.experiencia {
     background: var(--lilas-claro);
     color: var(--roxo-primario);
+    border: 1px solid var(--roxo-secundario);
 }
 
 .tip-date {
@@ -480,13 +480,13 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #F5EAF8 0%, #E1BEE7 100%);
+    background: var(--branco);
     color: var(--roxo-primario);
     text-align: center;
     padding: var(--espacamento-xl) 0;
     margin-top: var(--espacamento-xxl);
     border-top: 3px solid var(--roxo-secundario);
-    box-shadow: 0 -3px 10px rgba(139, 44, 171, 0.15);
+    box-shadow: 0 -3px 10px rgba(51, 51, 51, 0.15);
     font-weight: 500;
     letter-spacing: 0.03em;
 }
