@@ -1,10 +1,10 @@
-# 💜 Mural de Dicas MFP
+# 💜 Mural de Dicas ETEC Poá
 
-Um mural colaborativo para a **Maratona Feminina de Programação (MFP)** que exibe dicas no formato de post-its.
+Um mural colaborativo da **ETEC Poá** que exibe dicas no formato de post-its.
 
 ## ✨ Sobre o Projeto
 
-Este projeto cria um mural virtual onde participantes da Maratona Feminina de Programação podem compartilhar dicas de programação, estratégias e experiências através de post-its coloridos. O objetivo é criar um espaço colaborativo para troca de conhecimentos.
+Este projeto cria um mural virtual onde estudantes e participantes da ETEC Poá podem compartilhar dicas de programação, estratégias e experiências através de post-its coloridos. O objetivo é criar um espaço colaborativo para troca de conhecimentos.
 
 - Visual estilo mural de post-its com cores e rotações aleatórias
 - Fácil contribuição através da edição direta do código HTML
@@ -30,7 +30,7 @@ Este projeto cria um mural virtual onde participantes da Maratona Feminina de Pr
 ## 📁 Estrutura do Projeto
 
 ```bash
-mural-mfp/
+mural-etec-poa/
 ├── index.html    # Página principal com mural de post-its
 ├── styles.css    # Estilos de cortiça e post-its
 ├── script.js     # JavaScript para efeitos visuais dos post-its
@@ -47,4 +47,4 @@ mural-mfp/
 
 ---
 
-Feito com 💜 para a comunidade MFP.
+Feito com 💜 para a comunidade ETEC Poá.

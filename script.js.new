@@ -1,5 +1,5 @@
 /**
- * Mural MFP - Script para efeitos visuais de post-its
+ * Mural ETEC Poá - Script para efeitos visuais de post-its
  * 
  * Este script aplica rotações aleatórias e cores variadas aos post-its
  * para dar um aspecto mais realista ao mural.
